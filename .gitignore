@@ -1,5 +1,6 @@
 /.DS_Store
 /.env
+
 /error_log
 /auth.json
 /public/error_log
