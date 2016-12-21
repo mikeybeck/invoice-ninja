@@ -174,4 +174,24 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
             'Content-Type' => 'application/json',
         );
     }
+
+    public function setTransactionRbits($value)
+    {
+        return $this->setParameter('transactionRbits', $value);
+    }
+
+    public function getTransactionRbits()
+    {
+        return $this->getParameter('transactionRbits');
+    }
+
+    public function setPayerRbits($value)
+    {
+        return $this->setParameter('payerRbits', $value);
+    }
+
+    public function getPayerRbits()
+    {
+        return $this->getParameter('payerRbits');
+    }
 }

@@ -27,6 +27,9 @@ class PurchaseRequest extends AbstractRequest
             $data['callback_uri'] = $this->getCallbackUri();
         }
 
+        $data['transaction_rbits'] = $this->getTransactionRbits();
+        //$data['payer_rbits'] = $this->getPayerRbits();
+
         $token = $this->getToken();
         if (isset($token) && !empty($token)) {
             // unique_id must be used with a preapproval or a tokenized credit card
